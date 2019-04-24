@@ -50,10 +50,22 @@
     <Compile Include="Observer %28PUB_SUB%29\TheMemento\UpdateUserCommand.cs" />
     <Compile Include="Observer %28PUB_SUB%29\TheMemento\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strategy\IOrder.cs" />
+    <Compile Include="Strategy\IOrderPizza.cs" />
+    <Compile Include="Strategy\OrderLargePizza.cs" />
+    <Compile Include="Strategy\OrderMediumPizza.cs" />
+    <Compile Include="Strategy\OrderSmallPizza.cs" />
+    <Compile Include="Strategy\PizzaStrategy.cs" />
+    <Compile Include="Strategy\UnableToDeside.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Observer %28PUB_SUB%29\TheTemplateMethod\" />
-    <Folder Include="Strategy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DesignPatterns.Core\DesignPatterns.Core.csproj">
+      <Project>{5C6452E2-804E-474A-AAC5-5AABAFC4DC45}</Project>
+      <Name>DesignPatterns.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
