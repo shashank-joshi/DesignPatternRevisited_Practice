@@ -1,5 +1,4 @@
 ﻿using DesignPatterns.Core;
-using System;
 
 namespace DesignPatterns.BehaviouralPattern.Strategy
 {

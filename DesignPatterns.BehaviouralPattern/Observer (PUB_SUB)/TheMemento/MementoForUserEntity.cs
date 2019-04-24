@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace DesignPatterns.BehaviouralPattern.Observer__PUB_SUB_.TheMemento
+﻿namespace DesignPatterns.BehaviouralPattern.Observer__PUB_SUB_.TheMemento
 {
     internal class MementoForUserEntity
     {
