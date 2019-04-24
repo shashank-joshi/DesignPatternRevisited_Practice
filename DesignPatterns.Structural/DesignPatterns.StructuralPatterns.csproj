@@ -41,11 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorator\BasicPizzaBase.cs" />
+    <Compile Include="Decorator\IPizzaDecorator.cs" />
+    <Compile Include="Decorator\LargePizzaBase.cs" />
+    <Compile Include="Decorator\MediumPizzaBase.cs" />
+    <Compile Include="Decorator\SmallPizzaDecorator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Adaptor\" />
-    <Folder Include="Decorator\" />
     <Folder Include="Facade\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
