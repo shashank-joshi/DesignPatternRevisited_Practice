@@ -52,10 +52,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Strategy\IOrder.cs" />
     <Compile Include="Strategy\IOrderPizza.cs" />
+    <Compile Include="Strategy\LargePizzaStrategy.cs" />
+    <Compile Include="Strategy\MediumPizzaStrategy.cs" />
     <Compile Include="Strategy\OrderLargePizza.cs" />
     <Compile Include="Strategy\OrderMediumPizza.cs" />
     <Compile Include="Strategy\OrderSmallPizza.cs" />
     <Compile Include="Strategy\PizzaStrategy.cs" />
+    <Compile Include="Strategy\SmallPizzaStrategy.cs" />
     <Compile Include="Strategy\UnableToDeside.cs" />
   </ItemGroup>
   <ItemGroup>

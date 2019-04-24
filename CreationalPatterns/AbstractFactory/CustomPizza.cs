@@ -9,6 +9,7 @@ namespace CreationalPatterns.AbstractFactory
 {
     public class CustomPizza : IPizza
     {
+        public IPizza _orderPizza { get; set; }
         public IList<string> Toppings { get; }
 
         public void Bake()
@@ -29,6 +30,13 @@ namespace CreationalPatterns.AbstractFactory
         public void CheckObject(IPizza pizza)
         {
             
+        }
+
+        public string OrderPizza() => "Custom Pizza Order";
+
+        public void ChangeOrder(IPizza pizza)
+        {
+            _orderPizza = pizza;
         }
 
         public CustomPizza(IList<string> toppings)

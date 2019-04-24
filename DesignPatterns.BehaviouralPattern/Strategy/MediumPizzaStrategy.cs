@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.BehaviouralPattern.Strategy
 {
-    public interface IOrder
+   public  class MediumPizzaStrategy : PizzaStrategy
     {
-        string GetOrderDetails();
-        void ChangeOrder(IPizza pizza);
+        public MediumPizzaStrategy() : base(new MediumPizza()) { }
     }
 }

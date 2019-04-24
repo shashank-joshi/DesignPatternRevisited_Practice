@@ -9,7 +9,10 @@ namespace DesignPatterns.Core
     public class SmallPizza : IPizza
     {
         private IList<string> ingrediants;
+        public SmallPizza():this(new List<string> { "No "})
+        {
 
+        }
         public SmallPizza(IList<string> ingrediants)
         {
             this.ingrediants = ingrediants;
@@ -37,5 +40,9 @@ namespace DesignPatterns.Core
         {
             
         }
+
+     
+
+        public string OrderPizza() => "Small Pizza Order";
     }
 }

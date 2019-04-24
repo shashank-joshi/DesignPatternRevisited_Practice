@@ -10,6 +10,12 @@ namespace DesignPatterns.Core
     {
         private IList<string> ingrediants;
 
+        public LargePizza() : this(new List<string> { "No " })
+        {
+
+        }
+     //   public IPizza _orderPizza { get; set ; }
+
         public LargePizza(IList<string> ingrediants)
         {
             this.ingrediants = ingrediants;
@@ -37,5 +43,8 @@ namespace DesignPatterns.Core
         {
 
         }
+
+        public string OrderPizza() => "Large Pizza Order";
+   
     }
 }

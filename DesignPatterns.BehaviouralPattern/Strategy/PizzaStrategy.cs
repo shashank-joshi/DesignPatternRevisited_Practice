@@ -5,19 +5,20 @@ namespace DesignPatterns.BehaviouralPattern.Strategy
 {
     public class PizzaStrategy : IOrder
     {
-        private IOrderPizza _orderPizza;
-        public PizzaStrategy() : this(new UnableToDeside()) { }
+        private IPizza _orderPizza;
+        public PizzaStrategy() : this(new NoPizza()) { }
 
-        public PizzaStrategy(IOrderPizza _orderPizza)
+        public PizzaStrategy(IPizza _orderPizza)
         {
             this._orderPizza = _orderPizza;
         }
         public string GetOrderDetails() => _orderPizza.OrderPizza();
-
-
-        public void PlaceOrder(IPizza pizza)
+        public void ChangeOrder(IPizza pizza)
         {
-            throw new NotImplementedException();
+            _orderPizza = pizza;
         }
+
+
+
     }
 }
