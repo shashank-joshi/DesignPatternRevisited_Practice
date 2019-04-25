@@ -2,7 +2,6 @@
 {
     public interface IPizza
     {
-       
         void CheckObject(IPizza pizza);
         void Bake();
         void Cut();
