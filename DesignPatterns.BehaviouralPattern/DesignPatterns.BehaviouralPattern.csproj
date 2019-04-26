@@ -45,6 +45,14 @@
     <Compile Include="Command\Customer.cs" />
     <Compile Include="Command\IOrderCommand.cs" />
     <Compile Include="Command\PlaceOrderCommand.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\Customer.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\ITargetObserver.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\IPizzaDeleverySubject.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\PizzaDeleveryStatus.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\PizzaDeliverySubject.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\PizzaStore.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\Weak_References_PizzaDelivery_Subject\IPizzaSubjectWeakReferences.cs" />
+    <Compile Include="Observer %28PUB_SUB%29\Observer\Weak_References_PizzaDelivery_Subject\PizzaDeleveryStatusWeakReference.cs" />
     <Compile Include="Observer %28PUB_SUB%29\TheMemento\IDataCommand.cs" />
     <Compile Include="Observer %28PUB_SUB%29\TheMemento\MementoForUserEntity.cs" />
     <Compile Include="Observer %28PUB_SUB%29\TheMemento\UpdateUserCommand.cs" />
