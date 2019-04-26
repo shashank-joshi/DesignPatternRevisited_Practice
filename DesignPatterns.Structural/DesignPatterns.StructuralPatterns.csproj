@@ -41,16 +41,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adaptor\BurgerAdaptor.cs" />
+    <Compile Include="Adaptor\IBurger.cs" />
+    <Compile Include="Adaptor\IFood.cs" />
+    <Compile Include="Adaptor\PizzaAdapter.cs" />
+    <Compile Include="Adaptor\TikkiBurger.cs" />
     <Compile Include="Decorator\BasicPizzaBase.cs" />
     <Compile Include="Decorator\IPizzaDecorator.cs" />
     <Compile Include="Decorator\LargePizzaBase.cs" />
     <Compile Include="Decorator\MediumPizzaBase.cs" />
     <Compile Include="Decorator\SmallPizzaDecorator.cs" />
+    <Compile Include="Facade\BadPizza.cs" />
+    <Compile Include="Facade\PizzaFacade.cs" />
+    <Compile Include="Facade\IBadPizzaAPI.cs" />
+    <Compile Include="Facade\IBetterPizza.cs" />
+    <Compile Include="Facade\ITooBadPizzaAPI.cs" />
+    <Compile Include="Facade\TooBadPizza.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Adaptor\" />
-    <Folder Include="Facade\" />
+    <ProjectReference Include="..\DesignPatterns.Core\DesignPatterns.Core.csproj">
+      <Project>{5C6452E2-804E-474A-AAC5-5AABAFC4DC45}</Project>
+      <Name>DesignPatterns.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
